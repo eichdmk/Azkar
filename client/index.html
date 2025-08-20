@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📿 Азкары</title>
+
+  <!-- Tailwind CSS через CDN (для простоты) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Шрифт для арабского текста -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+  <!-- Настройка tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            arabic: ['Amiri', 'serif'],
+          },
+          colors: {
+            'green-prayer': '#16a34a',
+            'green-dark': '#15803d',
+            'beige': '#f5f0e6',
+            'brown': '#3e2723',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

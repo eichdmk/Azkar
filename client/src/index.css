@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Стиль для арабского текста */
+.font-arabic {
+  @apply font-arabic text-right text-2xl leading-relaxed;
+}
+
+/* Анимация при наведении */
+.hover-grow {
+  @apply transform transition duration-200 hover:scale-105;
+}
+
+/* Фоновая текстура */
+.bg-subtle {
+  background-color: #f5f0e6;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4edda' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.font-arabic {
+  font-family: 'Amiri', serif;
+  direction: rtl;
+  text-align: right;
+}
